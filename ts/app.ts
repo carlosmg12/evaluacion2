@@ -39,6 +39,7 @@ formulario.addEventListener("submit",function(evento){
     }
     if(rut.value.length>0 && !rutValido.test(rut.value)){
         alerta+=`El rut no tiene un formato valido.<br>`;
+        datosValidos=false;
     }
     if(correo.value.length==0){
         alerta+=`Ingrese un correo por favor.<br>`;
