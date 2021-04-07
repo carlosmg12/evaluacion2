@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+    <body>
+        <div id="mensaje"></div>
+        <form id="formulario" method="post" action="#">
+            <div class="form">
+                <div class="seccion">
+                    <label for="">Nombre</label>
+                    <input type="text" id="nombre" maxlength="15" placeholder="Nombre" >
+                </div>
+                <div class="seccion">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" maxlength="25" placeholder="Apellidos" >
+                </div>
+                <div class="seccion">
+                    <label for="rut">Rut</label>
+                    <input type="text" id="rut" maxlength="10" placeholder="Rut" >
+                </div>
+                <div class="seccion">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="Email" >
+                </div>
+                <div class="seccion">
+                    <label for="celular">Número de teléfono</label>
+                    <input type="text" id="celular" maxlength="9" placeholder="Número telefónico" >
+                </div>
+                <div class="seccion">
+					<div class="lista">Seleccione 1 o más lenguajes de su interés:
+                        <label>
+                            <input type="checkbox" name="python">
+                            <span>Python</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="java">
+                            <span>Java</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ts">
+                            <span>TypeScript</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="php">
+                            <span>PHP</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="c">
+                            <span>C#</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="c2">
+                            <span>C++</span>
+                        </label>
+                    </div>
+				</div>
+                <div class="seccion">
+                    <label for="nivel">Cuál es su nivel de conocimiento en programación?</label>
+                    <input type="range" min="0" max="100" value="0" required>
+                </div>
+                <div class="seccion">
+                    <label for="años">¿Cuantos años de experiencia laboral tiene?</label>
+                    <input type="radio" name="años" checked>1
+                    <input type="radio" name="años">2
+                    <input type="radio" name="años">3
+                    <input type="radio" name="años">4
+                    <input type="radio" name="años">5
+                    
+                </div>
+                
+                <div class="seccion">
+					<label for="descripcion">Breve descripcion acerca de usted</label>
+					<textarea id="descripcion" placeholder="300 caracteres máximo" ></textarea>
+				</div>
+                <div class="boton">
+					<button type="submit" id="enviar">Enviar datos</button>
+				</div>
+                <li>
+					<input type="button" onclick="limpiarDatos()" value="Limpiar campos">
+				</li>
+                <p class="alertaTolal" id="alertaTotal"></p>
+            </ul>
+
+
+        </form>
+        
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>

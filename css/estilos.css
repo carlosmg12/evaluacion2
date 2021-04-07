@@ -1,0 +1,100 @@
+body{
+    background-color: #f4d590;
+}
+
+.form{
+    width: 100%;
+    list-style-type: none;
+}
+
+.seccion{
+    margin:5px;
+    font-family: Arial;
+}
+
+label{
+	display:inline-block;
+	width:120px;
+	text-align: right;
+}
+
+input{
+	margin:5px;
+	border:1px solid blue;
+}
+
+.boton{
+    width: 100px;;
+    position: relative;
+    left: 150px;
+}
+
+#limpiar{
+    right:500px;
+}
+
+#enviar{
+    left:300px;
+    color:white;
+
+}
+
+input[type="button" i]{
+    position: relative;
+    left:300px;
+    padding-left:50px;
+    border:0px;
+	padding:10px;
+    bottom: 40px;
+    background-color:#f22929;
+    color:white;
+}
+
+.lista{
+    display: inline-block;
+    width:120px;
+	text-align: right;
+    height: 200px;
+    font-family: Arial;
+}
+
+.lista label{
+    position: relative;
+    left: 140px;
+    bottom: 45px;
+    display: block;
+    width:200px;
+	margin:5px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+textarea{
+	width:30%;
+	height:80px;
+    border:1px solid blue;
+    margin:5px;
+}
+
+.button{
+    padding-left:10%;
+}
+
+button {
+    border: 1px solid green;
+    padding: 10px;
+    background-color: #32511b;
+}
+
+#mensaje {
+display: none;
+}
+
+.alertaTolal{
+    width: 60%;
+    position: relative;
+    left: 130px;
+    color: red;
+    margin-bottom: 40px;
+    font-family: fantasy;
+}
